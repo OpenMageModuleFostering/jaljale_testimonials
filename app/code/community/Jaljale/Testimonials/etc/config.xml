@@ -81,17 +81,19 @@
 	</routers>
   </admin>
   <adminhtml>
-	<menu>
-		<jaljale>
-			<children>
-			  <testimonial module="testimonials">
-			    <title>Manage Testimonial</title>
-				<sort_order>0</sort_order>
-				<action>admin_testimonials/adminhtml_testimonial</action>
-			  </testimonial>
-			</children>
-		</jaljale>
-	</menu>
+    <menu>
+      <jaljale module="testimonials">
+        <title>Jaljale</title>
+        <sort_order>100</sort_order>
+        <children>
+              <testimonial module="testimonials">
+                <title>Manage Testimonial</title>
+                <sort_order>0</sort_order>
+                <action>admin_testimonials/adminhtml_testimonial</action>
+              </testimonial>
+            </children>
+        </jaljale>
+    </menu>
 	<acl>
 	  <resources>
 		<all>
