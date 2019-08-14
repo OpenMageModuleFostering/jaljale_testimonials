@@ -1,0 +1,26 @@
+<div class="container">
+	<h2><a href="all"><strong style="color: #30506b; padding-left: 20px;">CLIENT'S TESTIMONIALS</strong></a></h2>
+	<?php
+		$collection = $this->getTestimonials();
+		foreach($collection as $item){
+	?>
+		<div class="testimonials clearfix" style="width: 555px;max-width: 100%;margin-bottom:5px;">
+			<div class="client-img">
+				
+				<img class="img-responsive img-thumbnail" src="<?php echo Mage::helper('testimonials')-> getImage($item) ?>" alt="" /><br>
+				<h3 style="text-align: center;margin:0px;"><?php echo $item->getData('name'); ?></h3>
+			</div>
+			<div class="clients-view">
+				<h1 style="margin-top:0px;float:left"><?php echo $item->getData('title'); ?></h1>
+				<p style="float:right;font-size:12px;color:#666;"><?php echo $item->getData('date'); ?></p><br/>
+				<p style="margin-top:30px;"><?php echo $item->getData('description'); ?></p>
+			</div>
+		</div>
+		
+	<?php
+	}
+
+	echo $this->getPagerHtml();
+	?>
+
+</div>

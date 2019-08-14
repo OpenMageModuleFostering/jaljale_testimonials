@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Jaljale_Testimonials>
+            <active>true</active>
+            <codePool>community</codePool>
+            <version>0.1.0</version>
+        </Jaljale_Testimonials>
+    </modules>
+</config>
