@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Jaljale_Testimonials",
+    "name": "OpenMageModuleFostering\/Jaljale_Testimonials",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(GPL)",
     "homepage": "",
     "description": "A testimonial from a satisfied customer is the most effective means to convince a new customer that you are believable and make them feel secure to purchase items or services from your store. Let everyone know what your customers think about your store or products.",
     "authors": [
-    {
-        "name": "Krish",
-        "email": "jaljaletech@gmail.com"
-    }
-],
+        {
+            "name": "Krish",
+            "email": "jaljaletech@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
